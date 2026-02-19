@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamGenius</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="StreamGenius - Premium Streaming">
+    <meta name="description" content="Watch the latest movies, TV series, and exclusive content.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="StreamGenius - Premium Streaming">
+    <meta property="og:description" content="Watch the latest movies, TV series, and exclusive content.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Tailwind CSS (CDN for immediate preview) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+              'scale-up': 'scale-up 0.3s ease-out forwards',
+            },
+            keyframes: {
+              'fade-in-up': {
+                'from': { opacity: '0', transform: 'translateY(20px)' },
+                'to': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'scale-up': {
+                'from': { opacity: '0', transform: 'scale(0.95)' },
+                'to': { opacity: '1', transform: 'scale(1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.574.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "hls.js": "https://esm.sh/hls.js@^1.6.15"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#0f1014] text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
